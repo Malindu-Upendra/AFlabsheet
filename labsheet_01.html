@@ -37,16 +37,22 @@
         console.log(this.vehicleName);
     }
 
-    var car = {
+    var Car = {
 
         vehicleName : 'Nissan',
-        getVehicleName : printVehicleName()
+        getVehicleName : function () {
+            return function () {
+                console.log(this.vehicleName)
+            }
+        }
 
     }
 
-    printVehicleName()
+    //printVehicleName()
 
-    car.getVehicleName()
+    var newVN = Car.getVehicleName()
+    newVN = newVN.bind(Car)
+    //newVN()
 
 </script>
 
