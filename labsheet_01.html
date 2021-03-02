@@ -18,7 +18,35 @@
         argument();
     }
 
-    printintconsolewitharugument(printintconsole);
+    //printintconsolewitharugument(printintconsole);
+
+    var person = {
+        name : "Malindu",
+        age : 23,
+        printname : function () {
+            console.log(this.name)
+        }
+    };
+
+    //person.printname();
+
+    var vehicleName = 'toyota';
+
+    function printVehicleName()
+    {
+        console.log(this.vehicleName);
+    }
+
+    var car = {
+
+        vehicleName : 'Nissan',
+        getVehicleName : printVehicleName()
+
+    }
+
+    printVehicleName()
+
+    car.getVehicleName()
 
 </script>
 
