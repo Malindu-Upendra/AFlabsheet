@@ -27,10 +27,39 @@
         },5000)
     }
 
-    getvalue(function (value) {
+    /*getvalue(function (value) {
         getnewvalue(value,function (getnevalue) {
             console.log(getnevalue)
         })
+    })*/
+
+    function getPromise(){
+
+        let value = 0;
+
+        return new Promise(function (resolve,reject){
+
+            setTimeout(function(){
+                value = 1000;
+                resolve(value);
+            },1000)
+
+        })
+    }
+
+    function newPromise(value){
+        return new Promise(function(resolve,reject){
+
+                value = value * 10;
+                resolve(value);
+
+        })
+    }
+
+    getPromise().then(function(value){
+        return newPromise(value);
+    }).then(function (value) {
+        console.log(value);
     })
 
 </script>
