@@ -56,11 +56,48 @@
         })
     }
 
-    getPromise().then(function(value){
+    function setValue(value){
+        return value + 500;
+    }
+
+    /*getPromise().then(function(value){
         return newPromise(value);
     }).then(function (value) {
+        return setValue(value);
+    }).then(function (value) {
         console.log(value);
-    })
+    })*/
+
+    /*async function print() {
+        let value = await getPromise();
+        value = await newPromise(value);
+        value = setValue(value);
+        console.log(value);
+    }*/
+
+    async function print() {
+        let value = await getPromise();
+        value = await newPromise(value);
+        return value;
+    }
+
+    //print();
+
+    //print().then(value => setValue(value))
+        //s.then( value => console.log(value))
+
+    var persons = {
+        organization : 'science',
+        people : ['john','jane'],
+        print : function () {
+            this.people.forEach( (value) =>
+                {
+                    console.log(value,this.organization);
+                })
+        }
+    }
+
+    persons.print();
 
 </script>
 
