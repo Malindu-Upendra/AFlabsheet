@@ -1,0 +1,19 @@
+{
+  "name": "aflabsheet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malindu-Upendra/AFlabsheet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malindu-Upendra/AFlabsheet/issues"
+  },
+  "homepage": "https://github.com/Malindu-Upendra/AFlabsheet#readme"
+}
