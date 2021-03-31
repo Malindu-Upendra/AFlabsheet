@@ -1,10 +1,10 @@
 {
   "name": "aflabsheet",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/Malindu-Upendra/AFlabsheet/issues"
   },
-  "homepage": "https://github.com/Malindu-Upendra/AFlabsheet#readme"
+  "homepage": "https://github.com/Malindu-Upendra/AFlabsheet#readme",
+  "description": "",
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "koa": "^2.13.1"
+  }
 }
