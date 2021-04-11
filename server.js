@@ -1,6 +1,5 @@
 const Koa = require('koa');
-
-const HomeRouter = require('./router/home.router')
+const HomeRouter = require('./router/home.router');
 
 const app = new Koa();
 
@@ -10,7 +9,7 @@ app.use(ctx => {
     ctx.body='Hello'
 });
 
-app.listen(3000, err => {
+app.listen(3001, err => {
     if(err){
         console.log(err);
     }

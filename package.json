@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node app.js",
-    "start": "node server.js"
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,15 @@
     "url": "https://github.com/Malindu-Upendra/AFlabsheet/issues"
   },
   "homepage": "https://github.com/Malindu-Upendra/AFlabsheet#readme",
-  "description": "",
   "dependencies": {
+    "7": "0.0.1",
     "@koa/router": "^10.0.0",
-    "koa": "^2.13.1"
-  }
+    "koa": "^2.13.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2"
+  },
+  "description": ""
 }

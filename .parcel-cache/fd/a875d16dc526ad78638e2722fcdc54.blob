@@ -1,0 +1,61 @@
+var helpers = require("./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require('react-dom');
+  var _posts = require('./posts');
+  var _postsDefault = _parcelHelpers.interopDefault(_posts);
+  var _jsxFileName = "C:\\Users\\Hasitha\\WebstormProjects\\AFlabsheet\\App.jsx";
+  const posts = [{
+    id: 1,
+    name: 'React',
+    description: 'Best UI library'
+  }, {
+    id: 2,
+    name: 'Node',
+    description: 'Server side JS'
+  }];
+  class App extends _reactDefault.default.Component {
+    constructor(props) {
+      super(props);
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 12
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_postsDefault.default, {
+          posts: posts,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 17
+          }
+        }))
+      );
+    }
+  }
+  exports.default = App;
+  _reactDom.render(/*#__PURE__*/_reactDefault.default.createElement(App, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 8
+    }
+  }), document.getElementById('app'));
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
